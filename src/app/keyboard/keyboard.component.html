@@ -1,0 +1,5 @@
+<div class="keyboard-grid">
+    <div *ngFor="let key of keys; let i = index;"> 
+        <div><input value="{{key.text}}" type="button" (click)="userInput(key.text)"/></div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+ <!-- The AG Grid component -->
+ <ag-grid-angular 
+    class="ag-theme-quartz"
+    style="height: 500px; max-height: 500px;"
+    [rowData]="rowData"
+    [columnDefs]="colDefs"
+    (gridReady)="onGridReady($event)"
+    (selectionChanged)="onSelectionChanged()"
+    [rowSelection]="rowSelection">
+</ag-grid-angular>
